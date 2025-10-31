@@ -1,0 +1,21 @@
+# General Training Parameters
+model_name: "ssd"
+num_epochs: 10
+batch_size: 2
+learning_rate: 0.0001
+save_interval: 2
+file_prefix: "chembio_hiv_syph"
+class_names: ["casette", "membrane", "buffer", "buffer_sample"]
+
+# Dataset Paths
+train_img_dir: "./data/images/train"
+train_ann_file: "./data/annotations/train.json"
+val_img_dir: "./data/images/val"
+val_ann_file: "./data/annotations/val.json"
+test_img_dir: "./data/images/test"
+test_ann_file: "./data/annotations/test.json"
+
+# Model Saving Paths
+checkpoint_dir: "./checkpoints"
+final_model_dir: "./models"
+model_date: "2025-06-11"
